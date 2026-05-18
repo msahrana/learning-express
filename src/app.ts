@@ -13,8 +13,8 @@ const app: Application = express();
 app.use(express.json());
 
 app.use('/api/users', userRoute);
-app.use('/api/profile', profileRoute)
-app.use('/api/auth', authRoute)
+app.use('/api/profile', profileRoute);
+app.use('/api/auth', authRoute);
 
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
