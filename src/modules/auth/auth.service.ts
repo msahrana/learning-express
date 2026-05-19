@@ -32,7 +32,7 @@ const loginUserIntoDB = async (payload: {
         throw new Error('Invalid Credentials!');
     }
 
-    //3. Generate Token
+    // 3. Generate Token
     const jwtPayload = {
         id: user.id,
         name: user.name,
